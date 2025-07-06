@@ -1,0 +1,11 @@
+
+body { font-family: Arial; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+header { background: #007bff; color: white; padding: 1rem; text-align: center; font-size: 1.5rem; }
+.container { padding: 1rem; max-width: 800px; margin: auto; }
+.note-box { background: #e0f7fa; padding: 1rem; border-left: 4px solid #007bff; margin-bottom: 1rem; }
+.file-upload { background: white; padding: 1rem; border: 1px solid #ccc; border-radius: 8px; text-align: center; }
+footer { text-align: center; padding: 1rem; background: #f1f1f1; font-size: 0.9rem; color: #555; }
+.language-select, .rating-section { margin: 1rem 0; }
+.stars input { display: none; }
+.stars label { font-size: 1.5rem; color: #ccc; cursor: pointer; }
+.stars input:checked ~ label, .stars label:hover, .stars label:hover ~ label { color: gold; }

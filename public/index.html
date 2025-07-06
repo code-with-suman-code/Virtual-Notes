@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Notes</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>📘 Virtual Notes</header>
+  <div class="container">
+    <div class="note-box" id="noteBox">
+      💡 This website converts your notes into mock tests so you can revise better. 
+      Use it for school, college, or competitive exams!
+    </div>
+
+    <div class="language-select">
+      <strong>Select your preferred language:</strong><br/>
+      <label><input type="radio" name="lang" value="en" checked /> English</label><br/>
+      <label><input type="radio" name="lang" value="hi" /> Hindi</label><br/>
+      <label><input type="radio" name="lang" value="bn" /> Bengali</label>
+    </div>
+
+    <div class="file-upload">
+      <h3>Upload your notes (PDF / JPG / PNG)</h3>
+      <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png" />
+      <button onclick="alert('Backend connection required')">Upload</button>
+      <p><em>MCQ generator will process file on backend</em></p>
+    </div>
+
+    <div class="rating-section">
+      <h4>⭐ Rate your experience:</h4>
+      <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5"/><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"/><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"/><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"/><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1"/><label for="star1">★</label>
+      </div>
+      <textarea placeholder="Your feedback (optional)..." rows="3" style="width:100%;margin-top:0.5rem;"></textarea>
+      <button style="margin-top: 0.5rem; padding: 0.5rem 1rem;">Submit Feedback</button>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Sumantamarddy. All rights reserved.</footer>
+</body>
+</html>
